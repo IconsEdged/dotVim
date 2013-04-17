@@ -1,6 +1,7 @@
 " This must be first, because it changes other options as side effect
 set nocompatible
-
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 
 execute pathogen#infect()
 filetype plugin indent on
