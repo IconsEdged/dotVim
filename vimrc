@@ -15,3 +15,6 @@ endif
 set t_Co=16
 let g:solarized_termcolors=16
 colorscheme solarized
+
+"easyMotion Plugin for VIM's leader key configuration.
+let g:EasyMotion_leader_key = '\'
