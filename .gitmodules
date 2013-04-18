@@ -10,3 +10,9 @@
 [submodule "bundle/vim-sparkup"]
 	path = bundle/vim-sparkup
 	url = ../../rstacruz/sparkup.git
+[submodule "bundle/sparkup"]
+	path = bundle/sparkup
+	url = ../../rstacruz/sparkup.git
+[submodule "bundle/snipmate.vim"]
+	path = bundle/snipmate.vim
+	url = ../../msanders/snipmate.vim.git
