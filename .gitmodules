@@ -1,3 +1,6 @@
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = ../../tpope/vim-fugitive.git
+[submodule "bundle/vim-easymotion"]
+	path = bundle/vim-easymotion
+	url = ../../Lokaltog/vim-easymotion.git
