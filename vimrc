@@ -1,7 +1,7 @@
 " This must be first, because it changes other options as side effect
 set nocompatible
 "call pathogen#runtime_append_all_bundles()
-pathogen#incubate()
+call pathogen#incubate()
 call pathogen#helptags()
 execute pathogen#infect()
 
