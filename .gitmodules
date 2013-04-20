@@ -22,3 +22,6 @@
 [submodule "bundle/Command-T"]
 	path = bundle/Command-T
 	url = ../../wincent/Command-T.git
+[submodule "bundle/delimitMate"]
+	path = bundle/delimitMate
+	url = ../../Raimondi/delimitMate.git
