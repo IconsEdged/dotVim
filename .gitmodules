@@ -25,3 +25,9 @@
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = ../../Raimondi/delimitMate.git
+[submodule "nerdcommenter"]
+	path = nerdcommenter
+	url = ../../scrooloose/nerdcommenter.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = ../../scrooloose/nerdcommenter.git
