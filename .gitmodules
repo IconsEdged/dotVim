@@ -31,3 +31,6 @@
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = ../../scrooloose/nerdcommenter.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = ../../scrooloose/syntastic.git
