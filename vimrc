@@ -11,9 +11,9 @@ filetype indent plugin on
 
 syntax enable
 if has('gui_running')
-	set background=dark
+    set background=dark
 else
-	set background=light
+    set background=light
 endif
 set t_Co=16
 let g:solarized_termcolors=16
@@ -59,8 +59,16 @@ imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
-
+"http://vimbits.com/bits/139
+"for making this work in Macvim
 set macmeta
+
+"http://vim.wikia.com/wiki/Moving_lines_up_or_down
+"In normal mode or in insert mode, press Alt-j to move the current line down, 
+"or press Alt-k to move the current line up. 
+"After visually selecting a block of lines (for example, by pressing V then moving the cursor down), 
+"press Alt-j to move the whole block down, or press Alt-k to move the block up. 
+
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
 inoremap <A-j> <Esc>:m .+1<CR>==gi
@@ -68,3 +76,30 @@ inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
+"http://vimbits.com/bits/13
+"80-character line coloring 
+if exists('+colorcolumn')
+    set colorcolumn=80
+else
+    au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+endif
+
+"http://vimbits.com/bits/169
+"When opening a file, always jump to the last cursor position 
+autocmd BufReadPost *
+            \ if line("'\"") > 0 && line ("'\"") <= line("$") |
+            \ exe "normal g'\"" |
+            \ endif
+
+"http://vimbits.com/bits/312
+"highlight the current line/column, except when reading 
+set cursorline cursorcolumn " highlight the current line/column
+" f12 to toggle line/column highlighting
+noremap <silent><f12> :set cursorline! cursorcolumn!<cr>
+
+"http://vimbits.com/bits/397
+"move cursor when insert mode 
+imap <C-h> <C-o>h
+imap <C-j> <C-o>j
+imap <C-k> <C-o>k
+imap <C-l> <C-o>l
