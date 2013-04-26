@@ -59,9 +59,16 @@ imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
-"http://vimbits.com/bits/139
-"for making this work in Macvim
-set macmeta
+
+if has("unix")
+  let s:uname = system("uname")
+  if s:uname == "Darwin\n"
+    " Do Mac stuff here
+    "http://vimbits.com/bits/139
+    "for making this work in Macvim
+    set macmeta
+  endif
+endif
 
 "http://vim.wikia.com/wiki/Moving_lines_up_or_down
 "In normal mode or in insert mode, press Alt-j to move the current line down, 
@@ -106,3 +113,5 @@ imap <C-l> <C-o>l
 
 "Show where replace area ends 
 set cpoptions+=$
+
+
