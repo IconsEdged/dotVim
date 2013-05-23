@@ -113,5 +113,6 @@ imap <C-l> <C-o>l
 
 "Show where replace area ends 
 set cpoptions+=$
-
+"http://vim.wikia.com/wiki/Easier_buffer_switching
+:nnoremap <F5> :buffers<CR>:buffer<Space>
 
