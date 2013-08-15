@@ -12,12 +12,13 @@ filetype indent plugin on
 syntax enable
 if has('gui_running')
     set background=dark
+    colorscheme solarized
 else
     set background=light
+    colorscheme Mustang 
 endif
 set t_Co=16
 let g:solarized_termcolors=16
-colorscheme solarized
 
 
 "http://stackoverflow.com/questions/880668/how-to-avoid-indentation-error-after-changing-tab-stops-in-vim
