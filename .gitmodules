@@ -4,9 +4,6 @@
 [submodule "bundle/vim-easymotion"]
 	path = bundle/vim-easymotion
 	url = ../../Lokaltog/vim-easymotion.git
-[submodule "bundle/vim-surround"]
-	path = bundle/vim-surround
-	url = ../../tpope/vim-surround.git
 [submodule "bundle/vim-sparkup"]
 	path = bundle/vim-sparkup
 	url = ../../rstacruz/sparkup.git
