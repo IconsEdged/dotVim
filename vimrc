@@ -117,8 +117,4 @@ set cpoptions+=$
 "http://vim.wikia.com/wiki/Easier_buffer_switching
 :nnoremap <F5> :buffers<CR>:buffer<Space>
 
-" Buffers - explore/next/previous: Alt-F12, F12, Shift-F12.
-nnoremap <silent> <M-F12> :BufExplorer<CR>
-nnoremap <silent> <F12> :bn<CR>
-nnoremap <silent> <S-F12> :bp<CR>
 
